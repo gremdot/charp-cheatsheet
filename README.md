@@ -59,7 +59,7 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 `float` | A type of field that stores an approximate number, that might be rounded up or down, including decimals. 32 bits of size. | `float number = 1.5` | ?
 `bool` | A type of field that can store a true or false statement. | `bool isTired = true;` | ?
 `char` | A type of field that stores a character. | `char a;` | ?
-`string` | A type of field that stores an array of `char`'s or simple put text/ a sentence. | `string text;` | ?
+`string` | A type of field that stores an array of `char`'s or simple put text/ a sentence. Also called a String Literal. | `string text;` | ?
 `byte` | ? | ? | ?
 -------------------------------
 
@@ -83,8 +83,8 @@ Arithmetic Operators | The arithmetic operators perform addition, subtraction, m
 `**=` | Exponentiation Assignment. Raises the value of a variable to the power of the right operand. | `int a = 3; console.log(a **= 2); // expected output: 9` | ?
 `++` | Adds one to its operand. | ? | ?
 `--` | Subtracts one from its operand. | ? | ?
-Post-Increment `i++` | The variable is incremented after the expression is set. | ? | ?
-Pre-Increment `++i` | The variable is incremented before the expression is set. | ? | ?
+`i++` | Post-Increment. The variable is incremented after the expression is set. | ? | ?
+`++i` | Pre-Increment. The variable is incremented before the expression is set. | ? | ?
 -------------------------------
 
 
@@ -110,11 +110,11 @@ Comparison Operators | An operator used for comparing numeric operands that retu
 `==` | Equals to. | `randomNumber == 1` | ?
 `!=` | Not Equals to. | `randomNumber != 1` | ?
 `||` | OR | `pepsi || cola` | ?
-`>=` | Equals to or greater than. | `pepsi >= cola` | ?
-`<=` | Equals to or lesser than. | `cola <= pepsi` | ?
+`>=` | Equals to or greater than. | `cola >= pepsi` | ?
+`<=` | Equals to or lesser than. | `pepsi <= cola` | ?
 `if` | If the conditions apply then execute the line of code in the if-statement body. | `if { if-body }` | ?
-`else if` | If the other `if` statment/ statements did not apply then execute the line of code in the else if-statement body instead. | `else if { else if-body }` | ?
-`else` | else well execute when other `if` statment/ statements did not apply however it doesn't need a condition (body) like `if`, `else if` | `else;` | ?
+`else if` | If the other `if` statements did not apply then execute the line of code in the else if-statement body instead. | `else if { else if-body }` | ?
+`else` | else will execute when other `if` statements did not apply however it doesn't need a condition (body) like `if`, `else if` | `else return;` | ?
 -------------------------------
 
 
@@ -124,12 +124,11 @@ Comparison Operators | An operator used for comparing numeric operands that retu
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 `string.Length` | ? | ? | ?
-`string.ToUpper` | ? | ? | ?
-`string.ToLower` | ? | ? | ?
+`string.ToUpper` | Converts all characters to uppercase. | ? | ?
+`string.ToLower` | Converts all characters to lowercase. | ? | ?
 `string.+` | ? | ? | ?
-`$"{}"` | ? | ? | ?
-`@"{}"` | ? | ? | ?
-`string.[]` | ? | ? | ?
+`$"{}"` | Interpolated String Literal. A string that might contain interpolation expressions. | `string name = Mark;`, `Console.WriteLine($"Hi {name} how are you?") // returns Hi Mark how are you?` | ?
+`@" "` | Verbatim String Literal. Anything in the string that would normally be interpreted as an escape sequence is ignored. It also allows multi-line contents. | `Console.WriteLine(@"He said ""Hi Mark how are you?"" sarcastically") // returns He said "Hi Mark how are you?" sarcastically` | ?
 `string.IndexOf` | ? | ? | ?
 `string.SubString(int)` | ? | ? | ?
 `string.Substring(int, int)` | ? | ? | ?
@@ -162,15 +161,16 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 ## Arrays
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`Array` | ? | ? | ?
-`int[]` | ? | ? | ?
-Array Initialization | ? | ? | ?
-Array Access for Assignment | ? | ? | ?
-Array Access for Reading | ? | ? | ?
-`Array.Resize` | ? | ? | ?
-`Array.Length` | ? | ? | ?
+`Array` | A static list of a field | ? | ?
+`int[]` | A static list of integers. | `int[] x = new int[]`, `int[] list-name = new int[insert number]` | ?
+`string[]` | A static list of strings. | ? | ?
+`Array.Resize` | Resizes an Array. | ? | ?
+`Array.Length` | Used to refer to an Arrays' length. |  `for (int i = 0; i < array.Length; i++)` in this case we're expanding the array. | ?
 `foreach` | ? | ? | ?
 `2D-Array` | ? | ? | ?
+Array Initialization | ? | `int[] list-name = new int[insert number]` | ?
+Array Access for Assignment | ? | ? | ?
+Array Access for Reading | ? | ? | ?
 2D-Array Initialization | ? | ? | ?
 2D-Array Access for Assignment | ? | ? | ?
 2D-Array Access for Reading | ? | ? | ?
@@ -181,23 +181,21 @@ Jagged Arrays | ? | ? | ?
 ## Loops
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`while` | ? | ? | ?
-bool-expression | ? | ? | ?
-`do..while` | ? | ? | ?
-`for` | ? | ? | ?
-Iteration statement | ? | ? | ?
-Loop Body | ? | ? | ?
-Loop | ? | ? | ?
-Execution | ? | ? | ?
-Execution jump | ? | ? | ?
+Loop | A piece of statement that is being repeated. | ? | ?
+Loop Body | The statments withing the Loop | ? | ?
+Initializer statement | The initializer section is used to initialize a variable that will be local to a for loop and cannot be accessed outside loop. It can also be zero or more assignment statements, method call, increment, or decrement expression e.g., ++i or i++, and await expression. | ? | ?
+Condition statement | The condition is a boolean expression that will return either true or false. If an expression evaluates to true, then it will execute the loop again; otherwise, the loop is exited. | ? | ?
+Iteration statement | The iterator defines the incremental or decremental of the loop variable. | ? | ?
+For Loop | A loop that executes a block of statements repeatedly until the specified condition returns false. | `for (initializer; condition; iterator) { loop-body }`, `for (int i = 0 ; i < 5 ; i++) { loop-body }` | ?
+While Loop | A loop that runs through a block of statements as long as a specified condition is true. It does not have a initializer. |  `while (condition) { loop-body }` | ?
+Do...While Loop | A variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true. | `do { conditional code ; } while (condition);` | ?
+Nested Loop | A loop withing a loop | `while(condition) { while(condition) { loop-body 1 ;} loop-body 2 ;}` | ?
+Jump Statements | A Jump Statement or Execution Jump are statements that help in transferring control from one point to the other. | ? | ?
 `break` | ? | ? | ?
 `continue` | ? | ? | ?
 `return` | ? | ? | ?
-For Loop | ? | ? | ?
-While Loop | ? | ? | ?
-Do...While Loop | ? | `do { conditional code ; } while (condition);` | ?
-Nested Loop | ? | ? | ?
-
+`goto` | ? | ? | ?
+`throw` | ? | ? | ?
 
 
 
