@@ -125,8 +125,10 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 ------- | ------------------------------------------ | ------------ | ------------
 `string.Length` | ? | ? | ?
 `string.ToUpper` | ? | ? | ?
+`string.ToLower` | ? | ? | ?
 `string.+` | ? | ? | ?
 `$"{}"` | ? | ? | ?
+`@"{}"` | ? | ? | ?
 `string.[]` | ? | ? | ?
 `string.IndexOf` | ? | ? | ?
 `string.SubString(int)` | ? | ? | ?
