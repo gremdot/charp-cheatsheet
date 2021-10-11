@@ -23,7 +23,7 @@ Uninitialized Variable | A field without a value | `int i;` | ?
 Global Variable | Fields that have been declared outside of any functions and accessed by all other functions | `class Program { var imAccessibleToAll static void Main() { more code} }` | ?
 Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
-
+-------------------------------
 
 
 ## Fields
@@ -74,7 +74,7 @@ Comparison Operators | ? | ? | ?
 `if` | If the conditions apply then execute the line of code in the body. | ? | ?
 `else` | If the other `if` statment/ statements did not apple then execute this line of code instead. | ? | ?
 `else if` | ? | ? | ?
-
+-------------------------------
 
 
 ## Math
