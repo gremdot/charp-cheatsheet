@@ -22,6 +22,12 @@ Uninitialized Variable | A field without a value | `int i;` | ?
 Global Variable | Fields that have been declared outside of any functions and accessed by all other functions | `class Program { var imAccessibleToAll static void Main() { more code} }` | ?
 Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
+
+
+
+# Fields
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 `int` | A type of field that is able to store a exact number between -2147483648..2147483647 | `int number = 1;` | ?
 `double` | A type of field that is able to store a any number with decimals. 64 bits of size. | `double number = 1.567;` | ?
 `float` | A type of field that stores an approximate number, that might be rounded up or down, including decimals. 32 bits of size. | `float number = 1.5` | ?
@@ -33,6 +39,9 @@ Implicit Casting | ? | ? | ?
 Explicit Casting | ? | ? | ?
 Type Conversion | ? | ? | ?
 `Convert.ToInt32` | Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
+
+
+
 
 # Operators
 Keyword |                  Summary                   | Sample Code | Mentioned In
@@ -50,6 +59,26 @@ Arithmetic Operators | ? | ? | ?
 `--` | ? | ? | ?
 Post-Increment `i++` | ? | ? | ?
 Pre-Increment `++i` | ? | ? | ?
+Logical Operators | ? | ? | ?
+`!` | ? | ? | ?
+`&&` | ? | ? | ?
+`||` | ? | ? | ?
+Comparison Operators | ? | ? | ?
+`>` | ? | ? | ?
+`==` | ? | ? | ?
+`!=` | ? | ? | ?
+`||` | OR | ? | ?
+`>=` | Equals to or greater than. | ? | ?
+`<=` | Equals to or lesser than. | ? | ?
+`if` | If the conditions apply then execute the line of code in the body. | ? | ?
+`else` | If the other `if` statment/ statements did not apple then execute this line of code instead. | ? | ?
+`else if` | ? | ? | ?
+
+
+
+# Math
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 `System.Math` | ? | ? | ?
 `static` | ? | ? | ?
 `Math.Max` | ? | ? | ?
@@ -71,20 +100,6 @@ Pre-Increment `++i` | ? | ? | ?
 `string.Substring(int, int)` | ? | ? | ?
 `string.Replace` | ? | ? | ?
 immutable | ? | ? | ?
-Logical Operators | ? | ? | ?
-`!` | ? | ? | ?
-`&&` | ? | ? | ?
-`||` | ? | ? | ?
-Comparison Operators | ? | ? | ?
-`>` | ? | ? | ?
-`==` | ? | ? | ?
-`!=` | ? | ? | ?
-`||` | OR | ? | ?
-`>=` | Equals to or greater than. | ? | ?
-`<=` | Equals to or lesser than. | ? | ?
-`if` | If the conditions apply then execute the line of code in the body. | ? | ?
-`else` | If the other `if` statment/ statements did not apple then execute this line of code instead. | ? | ?
-`else if` | ? | ? | ?
 `? :` | ? | ? | ?
 Flow Control Statements | ? | ? | ?
 `System.Random` | ? | ? | ?
