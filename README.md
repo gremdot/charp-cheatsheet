@@ -66,6 +66,7 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 
 
 ## Operators
+### Symbols used to read or write data.
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 Operators | Symbols used to read or write data. | ? | ?
