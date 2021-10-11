@@ -3,29 +3,35 @@
 ## Basic Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`;`     | Used to separate statements from each other.| `int i = 5; i++; Console.WriteLine(i);` | [Script Execution](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#0-script-execution)
-`//`    | Used for single-line comments              | `float multiplier = 0.01f; // % to float (e.g. 24% = 0.24)` | [Comments](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#single-line-comments)
-Variable Initialization | When a value is assigned to a variable for the first time | `int a = 5;` | [Variables](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#variable-initialization)
 `dotnet new console -o project-name` | Used within Command Prompt to create a new template C# Project Folder | ? | ?
 Script Execution Order | The order in which script is run and compiled. Generally left to right, top to bottom. | ? | ?
 Formatting | The way in which the code is visually presented empasis must be kept on code readability. | ? | ?
 `Console.WriteLine` | Used to print variable types, usually a string onto the console on a new line. | ? | ?
 `Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line. | ? | ?
 `Console.ReadLine` | Used to read input from the console. Which can in turn be stored into a field. | `string name = Console.ReadLine;` | ?
-Multi-Line Comment | Used to make several lines of comments. | `/*/` | ?
-XML Documentation Comment | Used to give summaries on your code as well as define your code to the reader (such as class, interface, or delegate) or its member (such as field, property, method, or event). The .NET compiler has an option that reads and generate the XML documentation you've made. Which can be extracted to a separate XML file.  | `/// this method adds two intergers` | ?
 Field | A type of data | `string TelephoneNumber;` | ?
 Variable | A type of field | `var, int, string, bool etc.` | ?
+Variable Initialization | When a value is assigned to a variable for the first time | `int a = 5;` | [Variables](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#variable-initialization)
 Variable Declaration | Declaring a field | `int i;` | ?
 Variable Assignment | Assigning a field a value | `int i = 0;` | ?
 Uninitialized Variable | A field without a value | `int i;` | ?
-`=` | Assignment Operator. Used to give a field a value | `int i = 0;` | ?
 Global Variable | Fields that have been declared outside of any functions and accessed by all other functions | `class Program { var imAccessibleToAll static void Main() { more code} }` | ?
 Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
-Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2`the "1" and "2" are the operands and the plus symbol is the operator. | ?
-
+Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2` the "1" and "2" are the operands and the plus symbol is the operator. | ?
 -------------------------------
+
+
+## Basic Symbols
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`;`     | Used to separate statements from each other. | `int i = 5; i++; Console.WriteLine(i);` | [Script Execution](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#0-script-execution)
+`//`    | Used for single-line comments. | `float multiplier = 0.01f; // % to float (e.g. 24% = 0.24)` | [Comments](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#single-line-comments)
+`=` | Assignment Operator. Used to give a field a value. | `int i = 0;` | ?
+`/*/` | Multi-Line Comment. Used to make several lines of comments. | `/****/` | ?
+`///` | XML Documentation Comment. Used to give summaries on your code as well as define your code to the reader (such as class, interface, or delegate) or its member (such as field, property, method, or event). | `/// this method adds two intergers` | ?
+-------------------------------
+
 
 
 ## Fields
@@ -75,7 +81,7 @@ Logical Operators | Logical operators perform and, or, and not operations. They 
 `||` | OR | `randomNumber > 1 || someAmount < 5` | ?
 
 
-Comparison Operators | An operator used for comparison that returns a true/false. | ? | ?
+Comparison Operators | An operator used for comparing numeric operands that returns a true/false condition. | ? | ?
 `>` | Greater than. | `5 > 4` | ?
 `<` | Lesser than. | `4 < 5` | ?
 `==` | Equals to. | `randomNumber == 1` | ?
