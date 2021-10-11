@@ -9,7 +9,8 @@ Variable Initialization | When a value is assigned to a variable for the first t
 Script Execution Order | The order in which script is run and compiled. Generally left to right, top to bottom. | ? | ?
 Formatting | The way in which the code is visually presented empasis must be kept on code readability. | ? | ?
 `Console.WriteLine` | Used to print variable types, usually a string onto the console on a new line. | ? | ?
-`Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line.  | ? | ?
+`Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line. | ? | ?
+`Console.ReadLine` | Used to read input from the console. Which can in turn be stored into a field. | `string name = Console.ReadLine;` | ?
 Multi-Line Comment | Used to make several lines of comments. | `/*/` | ?
 XML Documentation Comment | Used to give summaries on your code as well as define your code to the reader (such as class, interface, or delegate) or its member (such as field, property, method, or event). The .NET compiler has an option that reads and generate the XML documentation you've made. Which can be extracted to a separate XML file.  | `/// this method adds two intergers` | ?
 Field | A type of data | `string TelephoneNumber;` | ?
@@ -31,7 +32,11 @@ Variable Scope | The location of which a field is being declared and can be acce
 Implicit Casting | ? | ? | ?
 Explicit Casting | ? | ? | ?
 Type Conversion | ? | ? | ?
-`Convert.ToInt32` | Used to convert other types of fields into an interger | `double number =1.5;` | ?
+`Convert.ToInt32` | Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
+
+
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 Operators | ? | ? | ?
 Arithmetic Operators | ? | ? | ?
 `+` | ? | ? | ?
@@ -74,11 +79,11 @@ Comparison Operators | ? | ? | ?
 `>` | ? | ? | ?
 `==` | ? | ? | ?
 `!=` | ? | ? | ?
-`||` | ? | ? | ?
-`>=` | ? | ? | ?
-`<=` | ? | ? | ?
-`if` | ? | ? | ?
-`else` | ? | ? | ?
+`||` | OR | ? | ?
+`>=` | Equals to or greater than. | ? | ?
+`<=` | Equals to or lesser than. | ? | ?
+`if` | If the conditions apply then execute the line of code in the body. | ? | ?
+`else` | If the other `if` statment/ statements did not apple then execute this line of code instead. | ? | ?
 `else if` | ? | ? | ?
 `? :` | ? | ? | ?
 Flow Control Statements | ? | ? | ?
