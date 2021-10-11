@@ -115,24 +115,14 @@ Comparison Operators | An operator used for comparing numeric operands that retu
 `if` | If the conditions apply then execute the line of code in the if-statement body. | `if { if-body }` | ?
 `else if` | If the other `if` statment/ statements did not apply then execute the line of code in the else if-statement body instead. | `else if { else if-body }` | ?
 `else` | else well execute when other `if` statment/ statements did not apply however it doesn't need a condition (body) like `if`, `else if` | `else;` | ?
-
 -------------------------------
 
 
 
-## Math
+
+## Strings
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`System.Math` | A static class containing many useful functions for numeric operands. | ? | ?
-`Math.Max` | Returns the higher of two numbers. | `Math.Max(int, int)`, `int max = Math.Max (5, 3) // returns 5` | ?
-`Math.Min` | Returns the smaller of two numbers. | `Math.Min(int, int)`, `int min = Math.Min (5, 3) // returns 3` | ?
-`Math.Sqrt` | Returns the Square Root of a number. | `double Sqrt(double)`, `double sqrt = Math.Sqrt(16); // returns 4.0` | ?
-`Math.Abs` | Returns the absolute of a number, which is always positive. | `double Abs(double)`, `double abs = Math.Abs(-4.3); // returns 4.3` | ?
-`Math.Round` | Returns the rounded value of a number (closest integer). Uses statistical rounding | `double Round(double)`, `double round = Math.Round(12.6); // returns 13` | ?
-`Math.Floor` | Returns the value of the number rounded to the lower integer | `double Floor(double)`, `double floor = Math.Floor(12.6); // returns 12` | ?
-`Math.Ceiling` | Returns the value of the number rounded to the higher integer | `double Ceiling(double)`, `double ceil = Math.Ceiling(12.1); // returns 13` | ?
-`Math.Clamp` | returns the value made to fit within the Min and Ma | `int Clamp(int value, int min, int max)`, `double clamp = Math.Clamp(15, 0, 10); // The value of 15 fits between 0 and 10 only up to the maximum of 10` | ?
-`Math.Pow` |  | ``, `` | ?
 `string.Length` | ? | ? | ?
 `string.ToUpper` | ? | ? | ?
 `string.+` | ? | ? | ?
@@ -142,27 +132,34 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 `string.SubString(int)` | ? | ? | ?
 `string.Substring(int, int)` | ? | ? | ?
 `string.Replace` | ? | ? | ?
-immutable | ? | ? | ?
-`? :` | ? | ? | ?
-Flow Control Statements | ? | ? | ?
-`System.Random` | ? | ? | ?
-pseudo-random | ? | ? | ?
-seed | ? | ? | ?
-`Random.Next(int, int)` | ? | ? | ?
-`Random.Next()` | ? | ? | ?
-`Random.NextDouble()` | ? | ? | ?
-`Random.Next()` | ? | ? | ?
-`while` | ? | ? | ?
-bool-expression | ? | ? | ?
-`do..while` | ? | ? | ?
-`for` | ? | ? | ?
-iteration statement | ? | ? | ?
-loop body | ? | ? | ?
-loop | ? | ? | ?
-execution | ? | ? | ?
-execution jump | ? | ? | ?
-`break` | ? | ? | ?
-`continue` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Math
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`System.Math` | A static class containing many useful functions for numeric operands. | ? | ?
+`Math.Max` | Returns the higher of two numbers. | `Math.Max(int, int)`, `int max = Math.Max (5, 3) // returns 5` | ?
+`Math.Min` | Returns the smaller of two numbers. | `Math.Min(int, int)`, `int min = Math.Min (5, 3) // returns 3` | ?
+`Math.Sqrt` | Returns the Square Root of a number. | `double Sqrt(double)`, `double sqrt = Math.Sqrt(16); // returns 4.0, because 4 * 4 = 16` | ?
+`Math.Abs` | Returns the absolute of a number, which is always positive. | `double Abs(double)`, `double abs = Math.Abs(-4.3); // returns 4.3` | ?
+`Math.Round` | Returns the rounded value of a number (closest integer). Uses statistical rounding | `double Round(double)`, `double round = Math.Round(12.6); // returns 13` | ?
+`Math.Floor` | Returns the value of the number rounded to the lower integer | `double Floor(double)`, `double floor = Math.Floor(12.6); // returns 12` | ?
+`Math.Ceiling` | Returns the value of the number rounded to the higher integer | `double Ceiling(double)`, `double ceil = Math.Ceiling(12.1); // returns 13` | ?
+`Math.Clamp` | Returns the value made to fit within the Min and Max | `int Clamp(int value, int min, int max)`, `double clamp = Math.Clamp(15, 0, 10); // The value of 15 fits between 0 and 10 only up to the maximum of 10` | ?
+`Math.Pow` | Returns the value to the power of power. | `double Pow(double value, double power)`, `double pow = Math.Pow(2, 3); // 8, because 2^3 = 2 * 2 * 2 = 8` | ?
+-------------------------------
+
+
+
+
+
+## Arrays
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 `Array` | ? | ? | ?
 `int[]` | ? | ? | ?
 Array Initialization | ? | ? | ?
@@ -176,6 +173,41 @@ Array Access for Reading | ? | ? | ?
 2D-Array Access for Assignment | ? | ? | ?
 2D-Array Access for Reading | ? | ? | ?
 Jagged Arrays | ? | ? | ?
+-------------------------------
+
+
+## Loops
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`while` | ? | ? | ?
+bool-expression | ? | ? | ?
+`do..while` | ? | ? | ?
+`for` | ? | ? | ?
+Iteration statement | ? | ? | ?
+Loop Body | ? | ? | ?
+Loop | ? | ? | ?
+Execution | ? | ? | ?
+Execution jump | ? | ? | ?
+`break` | ? | ? | ?
+`continue` | ? | ? | ?
+`return` | ? | ? | ?
+For Loop | ? | ? | ?
+While Loop | ? | ? | ?
+Do...While Loop | ? | `do { conditional code ; } while (condition);` | ?
+Nested Loop | ? | ? | ?
+
+
+
+immutable | ? | ? | ?
+`? :` | ? | ? | ?
+Flow Control Statements | ? | ? | ?
+`System.Random` | ? | ? | ?
+pseudo-random | ? | ? | ?
+seed | ? | ? | ?
+`Random.Next(int, int)` | ? | ? | ?
+`Random.Next()` | ? | ? | ?
+`Random.NextDouble()` | ? | ? | ?
+`Random.Next()` | ? | ? | ?
 Method | ? | ? | ?
 `void` | ? | ? | ?
 Return Type | ? | ? | ?
@@ -187,7 +219,6 @@ Parameter-List | ? | ? | ?
 Named Arguments | ? | ? | ?
 Optional Arguments | ? | ? | ?
 Default Value | ? | ? | ?
-`return` | ? | ? | ?
 Code Paths | ? | ? | ?
 Method Overloading | ? | ? | ?
 Object-Oriented Programming | ? | ? | ?
