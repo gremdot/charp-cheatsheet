@@ -1,14 +1,10 @@
 # CSharp Cheat Sheet Template
 
-## Basic Lingo
+## Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`dotnet new console -o project-name` | Used within Command Prompt to create a new template C# Project Folder | ? | ?
 Script Execution Order | The order in which script is run and compiled. Generally left to right, top to bottom. | ? | ?
 Formatting | The way in which the code is visually presented empasis must be kept on code readability. | ? | ?
-`Console.WriteLine` | Used to print variable types, usually a string onto the console on a new line. | ? | ?
-`Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line. | ? | ?
-`Console.ReadLine` | Used to read input from the console. Which can in turn be stored into a field. | `string name = Console.ReadLine;` | ?
 Field | A type of data | `string TelephoneNumber;` | ?
 Variable | A type of field | `var, int, string, bool etc.` | ?
 Variable Initialization | When a value is assigned to a variable for the first time | `int a = 5;` | [Variables](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#variable-initialization)
@@ -19,18 +15,39 @@ Global Variable | Fields that have been declared outside of any functions and ac
 Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
 Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2` the "1" and "2" are the operands and the plus symbol is the operator. | ?
+Type Conversion | Changing one data type to another. | ? | ?
+Primitive Data Type | Primitive data types are pre-defined. Data types like byte, int, short, float, long, char, bool, etc are called Primitive data types. | ? | ?
+Non-Primitive Data Type | Non-primitive data types are user-defined. Non-primitive data types include class, enum, array, delegate, etc. | ? | ?
+Implicit Casting | ? | ? | ?
+Explicit Casting | ? | ? | ?
 -------------------------------
 
 
-## Basic Symbols
+
+## Basics
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 `;`     | Used to separate statements from each other. | `int i = 5; i++; Console.WriteLine(i);` | [Script Execution](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#0-script-execution)
-`//`    | Used for single-line comments. | `float multiplier = 0.01f; // % to float (e.g. 24% = 0.24)` | [Comments](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#single-line-comments)
 `=` | Assignment Operator. Used to give a field a value. | `int i = 0;` | ?
+`//`    | Used for single-line comments. | `float multiplier = 0.01f; // % to float (e.g. 24% = 0.24)` | [Comments](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#single-line-comments)
 `/*/` | Multi-Line Comment. Used to make several lines of comments. | `/****/` | ?
 `///` | XML Documentation Comment. Used to give summaries on your code as well as define your code to the reader (such as class, interface, or delegate) or its member (such as field, property, method, or event). | `/// this method adds two intergers` | ?
+`static` | Class cannot can not be instantiated | you can not write `Math math = new Math();` | ?
 -------------------------------
+
+
+
+
+## Commands
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`Console.WriteLine` | Used to print variable types, usually a string onto the console on a new line. | ? | ?
+`Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line. | ? | ?
+`Console.ReadLine` | Used to read input from the console. Which can in turn be stored into a field. | `string name = Console.ReadLine;` | ?
+`dotnet new console -o project-name` | Used within Command Prompt to create a new template C# Project Folder | ? | ?
+`Convert.ToInt32` | Integer Type Conversion. Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
+-------------------------------
+
 
 
 
@@ -44,10 +61,6 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 `char` | A type of field that stores a character. | `char a;` | ?
 `string` | A type of field that stores an array of `char`'s or simple put text/ a sentence. | `string text;` | ?
 `byte` | ? | ? | ?
-Implicit Casting | ? | ? | ?
-Explicit Casting | ? | ? | ?
-Type Conversion | ? | ? | ?
-`Convert.ToInt32` | Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
 -------------------------------
 
 
@@ -70,17 +83,27 @@ Arithmetic Operators | The arithmetic operators perform addition, subtraction, m
 `**=` | Exponentiation Assignment. Raises the value of a variable to the power of the right operand. | `int a = 3; console.log(a **= 2); // expected output: 9` | ?
 `++` | Adds one to its operand. | ? | ?
 `--` | Subtracts one from its operand. | ? | ?
-
 Post-Increment `i++` | The variable is incremented after the expression is set. | ? | ?
 Pre-Increment `++i` | The variable is incremented before the expression is set. | ? | ?
+-------------------------------
 
 
+
+## Logical Operators
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 Logical Operators | Logical operators perform and, or, and not operations. They work by evaluating the first operand and then, if necessary the second. The second operand is evaluated only if its value is needed to determine the result. | ? | ?
 `!` | NOT | `!thirsty` | ?
 `&&` | AND | `randomNumber > 1 && randomNumber < 10` | ?
 `||` | OR | `randomNumber > 1 || someAmount < 5` | ?
+-------------------------------
 
 
+
+
+## Comparison Operators
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 Comparison Operators | An operator used for comparing numeric operands that returns a true/false condition. | ? | ?
 `>` | Greater than. | `5 > 4` | ?
 `<` | Lesser than. | `4 < 5` | ?
@@ -100,17 +123,16 @@ Comparison Operators | An operator used for comparing numeric operands that retu
 ## Math
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`System.Math` | ? | ? | ?
-`static` | ? | ? | ?
-`Math.Max` | ? | ? | ?
-`Math.Min` | ? | ? | ?
-`Math.Sqrt` | ? | ? | ?
-`Math.Abs` | ? | ? | ?
-`Math.Round` | ? | ? | ?
-`Math.Floor` | ? | ? | ?
-`Math.Ceiling` | ? | ? | ?
-`Math.Clamp` | ? | ? | ?
-`Math.Pow` | ? | ? | ?
+`System.Math` | A static class containing many useful functions for numeric operands. | ? | ?
+`Math.Max` | Returns the higher of two numbers. | `Math.Max(int, int)`, `int max = Math.Max (5, 3) // returns 5` | ?
+`Math.Min` | Returns the smaller of two numbers. | `Math.Min(int, int)`, `int min = Math.Min (5, 3) // returns 3` | ?
+`Math.Sqrt` | Returns the Square Root of a number. | `double Sqrt(double)`, `double sqrt = Math.Sqrt(16); // returns 4.0` | ?
+`Math.Abs` | Returns the absolute of a number, which is always positive. | `double Abs(double)`, `double abs = Math.Abs(-4.3); // returns 4.3` | ?
+`Math.Round` | Returns the rounded value of a number (closest integer). Uses statistical rounding | `double Round(double)`, `double round = Math.Round(12.6); // returns 13` | ?
+`Math.Floor` | Returns the value of the number rounded to the lower integer | `double Floor(double)`, `double floor = Math.Floor(12.6); // returns 12` | ?
+`Math.Ceiling` | Returns the value of the number rounded to the higher integer | `double Ceiling(double)`, `double ceil = Math.Ceiling(12.1); // returns 13` | ?
+`Math.Clamp` | returns the value made to fit within the Min and Ma | `int Clamp(int value, int min, int max)`, `double clamp = Math.Clamp(15, 0, 10); // The value of 15 fits between 0 and 10 only up to the maximum of 10` | ?
+`Math.Pow` |  | ``, `` | ?
 `string.Length` | ? | ? | ?
 `string.ToUpper` | ? | ? | ?
 `string.+` | ? | ? | ?
