@@ -1,5 +1,6 @@
 # CSharp Cheat Sheet Template
 
+## Basic Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 `;`     | Used to separate statements from each other.| `int i = 5; i++; Console.WriteLine(i);` | [Script Execution](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#0-script-execution)
@@ -25,7 +26,7 @@ Variable Scope | The location of which a field is being declared and can be acce
 
 
 
-# Fields
+## Fields
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 `int` | A type of field that is able to store a exact number between -2147483648..2147483647 | `int number = 1;` | ?
@@ -39,11 +40,11 @@ Implicit Casting | ? | ? | ?
 Explicit Casting | ? | ? | ?
 Type Conversion | ? | ? | ?
 `Convert.ToInt32` | Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
+-------------------------------
 
 
 
-
-# Operators
+## Operators
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 Operators | ? | ? | ?
@@ -76,7 +77,7 @@ Comparison Operators | ? | ? | ?
 
 
 
-# Math
+## Math
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 `System.Math` | ? | ? | ?
