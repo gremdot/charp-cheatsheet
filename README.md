@@ -198,6 +198,10 @@ Nested Loop | ? | ? | ?
 
 
 
+
+## Clean
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 immutable | ? | ? | ?
 `? :` | ? | ? | ?
 Flow Control Statements | ? | ? | ?
