@@ -19,10 +19,12 @@ Variable | A type of field | `var, int, string, bool etc.` | ?
 Variable Declaration | Declaring a field | `int i;` | ?
 Variable Assignment | Assigning a field a value | `int i = 0;` | ?
 Uninitialized Variable | A field without a value | `int i;` | ?
-`=` (Assignment Operator) | Used to give a field a value | `int i = 0;` | ?
+`=` | Assignment Operator. Used to give a field a value | `int i = 0;` | ?
 Global Variable | Fields that have been declared outside of any functions and accessed by all other functions | `class Program { var imAccessibleToAll static void Main() { more code} }` | ?
 Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
+Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2`the "1" and "2" are the operands and the plus symbol is the operator. | ?
+
 -------------------------------
 
 
@@ -47,34 +49,46 @@ Type Conversion | ? | ? | ?
 ## Operators
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Operators | ? | ? | ?
-Arithmetic Operators | ? | ? | ?
-`+` | ? | ? | ?
-`-` | ? | ? | ?
-`*` | ? | ? | ?
-`/` | ? | ? | ?
-`%` | ? | ? | ?
-`+=` | ? | ? | ?
-`-=` | ? | ? | ?
-`++` | ? | ? | ?
-`--` | ? | ? | ?
-Post-Increment `i++` | ? | ? | ?
-Pre-Increment `++i` | ? | ? | ?
-Logical Operators | ? | ? | ?
-`!` | ? | ? | ?
-`&&` | ? | ? | ?
-`||` | ? | ? | ?
-Comparison Operators | ? | ? | ?
-`>` | ? | ? | ?
-`==` | ? | ? | ?
-`!=` | ? | ? | ?
-`||` | OR | ? | ?
-`>=` | Equals to or greater than. | ? | ?
-`<=` | Equals to or lesser than. | ? | ?
-`if` | If the conditions apply then execute the line of code in the body. | ? | ?
-`else` | If the other `if` statment/ statements did not apple then execute this line of code instead. | ? | ?
-`else if` | ? | ? | ?
+Operators | Symbols used to read or write data. | ? | ?
+Arithmetic Operators | The arithmetic operators perform addition, subtraction, multiplication, division, exponentiation, and modulus operations. | ? | ?
+`+` | Addition. Adds the second operand to the first. | ? | ?
+`-` | Subtraction. Subtracts the second operand from the first. | ? | ?
+`*` | Multiplication. Multiplies first operand by the second. | ? | ?
+`/` | Division. Divides the first operand by the second.| ? | ?
+`%` | Modulo. Divides the first interger operand by the second, and returns the remainder. | ? | ?
+`+=` | Addition Assignment. It performs the addition of left and right operands and assigns a result to the left operand. | `a += 10 is equals to a = a + 10` | ?
+`-=` | Subtraction Assignment. It performs the subtraction of left and right operands and assigns a result to the left operand. | `a -= 10 is equals to a = a - 10` | ?
+`*=` | Muliplication Assignment. It performs the multiplication of left and right operands and assigns a result to the left operand. | `a *= 10 is equals to a = a * 10` | ?
+`/=` | Division Assignment. It performs the division of left and right operands and assigns a result to the left operand. | `a /= 10 is equals to a = a / 10` | ?
+`%=` | Modulo Assignment. It performs the modulo operation on two operands and assigns a result to the left operand. | `a %= 10 is equals to a = a % 10` | ?
+`**=` | Exponentiation Assignment. Raises the value of a variable to the power of the right operand. | `int a = 3; console.log(a **= 2); // expected output: 9` | ?
+`++` | Adds one to its operand. | ? | ?
+`--` | Subtracts one from its operand. | ? | ?
+
+Post-Increment `i++` | The variable is incremented after the expression is set. | ? | ?
+Pre-Increment `++i` | The variable is incremented before the expression is set. | ? | ?
+
+
+Logical Operators | Logical operators perform and, or, and not operations. They work by evaluating the first operand and then, if necessary the second. The second operand is evaluated only if its value is needed to determine the result. | ? | ?
+`!` | NOT | `!thirsty` | ?
+`&&` | AND | `randomNumber > 1 && randomNumber < 10` | ?
+`||` | OR | `randomNumber > 1 || someAmount < 5` | ?
+
+
+Comparison Operators | An operator used for comparison that returns a true/false. | ? | ?
+`>` | Greater than. | `5 > 4` | ?
+`<` | Lesser than. | `4 < 5` | ?
+`==` | Equals to. | `randomNumber == 1` | ?
+`!=` | Not Equals to. | `randomNumber != 1` | ?
+`||` | OR | `pepsi || cola` | ?
+`>=` | Equals to or greater than. | `pepsi >= cola` | ?
+`<=` | Equals to or lesser than. | `cola <= pepsi` | ?
+`if` | If the conditions apply then execute the line of code in the if-statement body. | `if { if-body }` | ?
+`else if` | If the other `if` statment/ statements did not apply then execute the line of code in the else if-statement body instead. | `else if { else if-body }` | ?
+`else` | else well execute when other `if` statment/ statements did not apply however it doesn't need a condition (body) like `if`, `else if` | `else;` | ?
+
 -------------------------------
+
 
 
 ## Math
