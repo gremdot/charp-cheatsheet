@@ -3,7 +3,7 @@
 ## Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Script Execution Order | The order in which script is run and compiled. Generally left to right, top to bottom. | ? | ?
+Script Execution Order | The order in which script is run and compiled. Generally left to right. | ? | ?
 Formatting | The way in which the code is visually presented empasis must be kept on code readability. | ? | ?
 Field | A type of data | `string TelephoneNumber;` | ?
 Variable | A type of field | `var, int, string, bool etc.` | ?
