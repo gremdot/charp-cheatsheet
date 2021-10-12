@@ -203,7 +203,8 @@ Jump Statements | A Jump Statement or Execution Jump are statements that help in
 ## Clean
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-immutable | ? | ? | ?
+`const` | Constant. A keyword to make a field immutable. | ? | ?
+immutable | Means that the set field cannot be changed. | ? | ?
 `? :` | ? | ? | ?
 Flow Control Statements | ? | ? | ?
 `System.Random` | ? | ? | ?
