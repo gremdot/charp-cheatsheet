@@ -1,18 +1,126 @@
 # CSharp Cheat Sheet Template
 
-## Lingo
+
+## Program Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Script Execution Order | The order in which script is run and compiled. Generally left to right. | ? | ?
+Default Value | ? | ? | ?
+Code Paths | ? | ? | ?
+Object-Oriented Programming | ? | ? | ?
+Data | ? | ? | ?
+Function | ? | ? | ?
+Structured Programming | ? | ? | ?
+Objects | ? | ? | ?
+Type | ? | ? | ?
+Flow Control Statements | ? | ? | ?
+Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Formatting | The way in which the code is visually presented empasis must be kept on code readability. | ? | ?
-Field | A type of data | `string TelephoneNumber;` | ?
-Variable | A type of field | `var, int, string, bool etc.` | ?
+Script Execution Order | The order in which script is run and compiled. Generally left to right. | ? | ?
+`()` | ? | ? | ?
+`null` | ? | ? | ?
+`? :` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Program Code
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`;`     | Used to separate statements from each other. | `int i = 5; i++; Console.WriteLine(i);` | [Script Execution](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#0-script-execution)
+`=` | Assignment Operator. Used to give a field a value. | `int i = 0;` | ?
+`//`    | Used for single-line comments. | `float multiplier = 0.01f; // % to float (e.g. 24% = 0.24)` | [Comments](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#single-line-comments)
+`/*/` | Multi-Line Comment. Used to make several lines of comments. | `/****/` | ?
+`///` | XML Documentation Comment. Used to give summaries on your code as well as define your code to the reader (such as class, interface, or delegate) or its member (such as field, property, method, or event). | `/// this method adds two intergers` | ?
+`Convert.ToInt32` | Integer Type Conversion. Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
+`new` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Access Modifier
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+Access Modifier | ? | ? | ?
+`private` | ? | ? | ?
+`protected` | ? | ? | ?
+`public` | ? | ? | ?
+`internal` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Parameters & Arguments
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+Parameter | ? | ? | ?
+Argument | ? | ? | ?
+Parameter-List | ? | ? | ?
+Named Arguments | ? | ? | ?
+Optional Arguments | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Classes
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+Class | ? | ? | ?
+Class Member | ? | ? | ?
+Class Instance | ? | ? | ?
+Invoke | ? | ? | ?
+Static Class Member | ? | ? | ?
+Static Class | ? | ? | ?
+Global Access | ? | ? | ?
+Initial Class Values | ? | ? | ?
+Parameterless | ? | ? | ?
+Default Contructor | ? | ? | ?
+Class Member Access | ? | ? | ?
+Property | ? | ? | ?
+`class` | ? | ? | ?
+`static` | Class cannot can not be instantiated | you can not write `Math math = new Math();` | ?
+-------------------------------
+
+
+
+
+
+## Methods
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+Method | ? | ? | ?
+Method Overloading | ? | ? | ?
+Instance Method | ? | ? | ?
+Constructor | ? | ? | ?
+Getter Method | ? | ? | ?
+Setter Method | ? | ? | ?
+Validation | ? | ? | ?
+Processing | ? | ? | ?
+Return Type | ? | ? | ?
+`get` | ? | ? | ?
+`set` | ? | ? | ?
+`void` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Variables
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 Variable Initialization | When a value is assigned to a variable for the first time | `int a = 5;` | [Variables](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#variable-initialization)
 Variable Declaration | Declaring a field | `int i;` | ?
 Variable Assignment | Assigning a field a value | `int i = 0;` | ?
 Uninitialized Variable | A field without a value | `int i;` | ?
 Global Variable | Fields that have been declared outside of any functions and accessed by all other functions | `class Program { var imAccessibleToAll static void Main() { more code} }` | ?
-Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
 Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2` the "1" and "2" are the operands and the plus symbol is the operator. | ?
 Type Conversion | Changing one data type to another. | `int age = Convert.ToInt32(Console.ReadLine());` here a string is being converted into an integer | ?
@@ -24,36 +132,14 @@ Explicit Casting | ? | ? | ?
 
 
 
-## Basics
+
+
+## Fields & Keywords
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-`;`     | Used to separate statements from each other. | `int i = 5; i++; Console.WriteLine(i);` | [Script Execution](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#0-script-execution)
-`=` | Assignment Operator. Used to give a field a value. | `int i = 0;` | ?
-`//`    | Used for single-line comments. | `float multiplier = 0.01f; // % to float (e.g. 24% = 0.24)` | [Comments](https://github.com/marczaku/csharp-basics/blob/main/slides/003.3.1-console-basics-1.md#single-line-comments)
-`/*/` | Multi-Line Comment. Used to make several lines of comments. | `/****/` | ?
-`///` | XML Documentation Comment. Used to give summaries on your code as well as define your code to the reader (such as class, interface, or delegate) or its member (such as field, property, method, or event). | `/// this method adds two intergers` | ?
-`static` | Class cannot can not be instantiated | you can not write `Math math = new Math();` | ?
--------------------------------
-
-
-
-
-## Commands
-Keyword |                  Summary                   | Sample Code | Mentioned In
-------- | ------------------------------------------ | ------------ | ------------
-`Console.WriteLine` | Used to print variable types, usually a string onto the console on a new line. | ? | ?
-`Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line. | ? | ?
-`Console.ReadLine` | Used to read input from the console. Which can in turn be stored into a field. | `string name = Console.ReadLine;` | ?
-`dotnet new console -o project-name` | Used within Command Prompt to create a new template C# Project Folder | ? | ?
-`Convert.ToInt32` | Integer Type Conversion. Used to convert other types of fields into an interger | `int age = Convert.ToInt32(Console.ReadLine());` | ?
--------------------------------
-
-
-
-
-## Fields
-Keyword |                  Summary                   | Sample Code | Mentioned In
-------- | ------------------------------------------ | ------------ | ------------
+Field | A type of data | `string TelephoneNumber;` | ?
+Variable | A type of field | `var, int, string, bool etc.` | ?
+immutable | Means that the set field cannot be changed. | ? | ?
 `int` | A type of field that is able to store a exact number between -2147483648..2147483647 | `int number = 1;` | ?
 `double` | A type of field that is able to store a any number with decimals. 64 bits of size. | `double number = 1.567;` | ?
 `float` | A type of field that stores an approximate number, that might be rounded up or down, including decimals. 32 bits of size. | `float number = 1.5` | ?
@@ -61,7 +147,10 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 `char` | A type of field that stores a character. | `char a;` | ?
 `string` | A type of field that stores an array of `char`'s or simple put text/ a sentence. Also called a String Literal. | `string text;` | ?
 `byte` | ? | ? | ?
+`const` | Constant. A keyword to make a field immutable. | ? | ?
 -------------------------------
+
+
 
 
 
@@ -90,14 +179,17 @@ Arithmetic Operators | The arithmetic operators perform addition, subtraction, m
 
 
 
+
+
 ## Logical Operators
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 Logical Operators | Logical operators perform and, or, and not operations. They work by evaluating the first operand and then, if necessary the second. The second operand is evaluated only if its value is needed to determine the result. | ? | ?
-`!` | NOT | `!thirsty` | ?
+`!` | NOT | `hunrgy = !thirsty` | ?
 `&&` | AND | `randomNumber > 1 && randomNumber < 10` | ?
 `||` | OR | `randomNumber > 1 || someAmount < 5` | ?
 -------------------------------
+
 
 
 
@@ -121,6 +213,31 @@ Comparison Operators | An operator used for comparing numeric operands that retu
 
 
 
+
+## Loops
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+Loop | A piece of statement that is being repeated. | ? | ?
+Loop Body | The statments withing the Loop | ? | ?
+Initializer statement | The initializer section is used to initialize a variable that will be local to a for loop and cannot be accessed outside loop. It can also be zero or more assignment statements, method call, increment, or decrement expression e.g., ++i or i++, and await expression. | ? | ?
+Condition statement | The condition is a boolean expression that will return either true or false. If an expression evaluates to true, then it will execute the loop again; otherwise, the loop is exited. | ? | ?
+Iteration statement | The iterator defines the incremental or decremental of the loop variable. | ? | ?
+For Loop | A loop that executes a block of statements repeatedly until the specified condition returns false. | `for (initializer; condition; iterator) { loop-body }`, `for (int i = 0 ; i < 5 ; i++) { loop-body }` | ?
+While Loop | A loop that runs through a block of statements as long as a specified condition is true. It does not have a initializer. |  `while (condition) { loop-body }` | ?
+Do...While Loop | A variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true. | `do { conditional code ; } while (condition);` | ?
+Nested Loop | A loop withing a loop | `while(condition) { while(condition) { loop-body 1 ;} loop-body 2 ;}` | ?
+Jump Statements | A Jump Statement or Execution Jump are statements that help in transferring control from one point to the other. | ? | ?
+`break` | A jump statement that breaks the current loop it's in. | ? | ?
+`continue` | ? | ? | ?
+`return` | ? | ? | ?
+`goto` | ? | ? | ?
+`throw` | ? | ? | ?
+-------------------------------
+
+
+
+
+
 ## Strings
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
@@ -128,12 +245,12 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 `string.ToUpper` | Converts all characters to uppercase. | ? | ?
 `string.ToLower` | Converts all characters to lowercase. | ? | ?
 `string.+` | ? | ? | ?
-`$"{}"` | Interpolated String Literal. A string that might contain interpolation expressions. | `string name = Mark;`, `Console.WriteLine($"Hi {name} how are you?") // returns Hi Mark how are you?` | ?
-`@" "` | Verbatim String Literal. Anything in the string that would normally be interpreted as an escape sequence is ignored. It also allows multi-line contents. | `Console.WriteLine(@"He said ""Hi Mark how are you?"" sarcastically") // returns He said "Hi Mark how are you?" sarcastically` | ?
 `string.IndexOf` | ? | ? | ?
 `string.SubString(int)` | ? | ? | ?
 `string.Substring(int, int)` | ? | ? | ?
 `string.Replace` | ? | ? | ?
+`$"{}"` | Interpolated String Literal. A string that might contain interpolation expressions. | `string name = Mark;`, `Console.WriteLine($"Hi {name} how are you?") // returns Hi Mark how are you?` | ?
+`@" "` | Verbatim String Literal. Anything in the string that would normally be interpreted as an escape sequence is ignored. It also allows multi-line contents. | `Console.WriteLine(@"He said ""Hi Mark how are you?"" sarcastically") // returns He said "Hi Mark how are you?" sarcastically` | ?
 -------------------------------
 
 
@@ -153,6 +270,22 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 `Math.Ceiling` | Returns the value of the number rounded to the higher integer | `double Ceiling(double)`, `double ceil = Math.Ceiling(12.1); // returns 13` | ?
 `Math.Clamp` | Returns the value made to fit within the Min and Max | `int Clamp(int value, int min, int max)`, `double clamp = Math.Clamp(15, 0, 10); // The value of 15 fits between 0 and 10 only up to the maximum of 10` | ?
 `Math.Pow` | Returns the value to the power of power. | `double Pow(double value, double power)`, `double pow = Math.Pow(2, 3); // 8, because 2^3 = 2 * 2 * 2 = 8` | ?
+-------------------------------
+
+
+
+
+
+## Random
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`System.Random` | ? | ? | ?
+`Random.Next(int, int)` | ? | ? | ?
+`Random.Next()` | ? | ? | ?
+`Random.NextDouble()` | ? | ? | ?
+`Random.Next()` | ? | ? | ?
+pseudo-random | ? | ? | ?
+seed | ? | ? | ?
 -------------------------------
 
 
@@ -179,110 +312,64 @@ Jagged Arrays | ? | ? | ?
 -------------------------------
 
 
-## Loops
+
+
+
+## Inheritance
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Loop | A piece of statement that is being repeated. | ? | ?
-Loop Body | The statments withing the Loop | ? | ?
-Initializer statement | The initializer section is used to initialize a variable that will be local to a for loop and cannot be accessed outside loop. It can also be zero or more assignment statements, method call, increment, or decrement expression e.g., ++i or i++, and await expression. | ? | ?
-Condition statement | The condition is a boolean expression that will return either true or false. If an expression evaluates to true, then it will execute the loop again; otherwise, the loop is exited. | ? | ?
-Iteration statement | The iterator defines the incremental or decremental of the loop variable. | ? | ?
-For Loop | A loop that executes a block of statements repeatedly until the specified condition returns false. | `for (initializer; condition; iterator) { loop-body }`, `for (int i = 0 ; i < 5 ; i++) { loop-body }` | ?
-While Loop | A loop that runs through a block of statements as long as a specified condition is true. It does not have a initializer. |  `while (condition) { loop-body }` | ?
-Do...While Loop | A variant of the while loop. This loop will execute the code block once, before checking if the condition is true, then it will repeat the loop as long as the condition is true. | `do { conditional code ; } while (condition);` | ?
-Nested Loop | A loop withing a loop | `while(condition) { while(condition) { loop-body 1 ;} loop-body 2 ;}` | ?
-Jump Statements | A Jump Statement or Execution Jump are statements that help in transferring control from one point to the other. | ? | ?
-`break` | ? | ? | ?
-`continue` | ? | ? | ?
-`return` | ? | ? | ?
-`goto` | ? | ? | ?
-`throw` | ? | ? | ?
-
-
-
-## Clean
-Keyword |                  Summary                   | Sample Code | Mentioned In
-------- | ------------------------------------------ | ------------ | ------------
-`const` | Constant. A keyword to make a field immutable. | ? | ?
-immutable | Means that the set field cannot be changed. | ? | ?
-`? :` | ? | ? | ?
-Flow Control Statements | ? | ? | ?
-`System.Random` | ? | ? | ?
-pseudo-random | ? | ? | ?
-seed | ? | ? | ?
-`Random.Next(int, int)` | ? | ? | ?
-`Random.Next()` | ? | ? | ?
-`Random.NextDouble()` | ? | ? | ?
-`Random.Next()` | ? | ? | ?
-Method | ? | ? | ?
-`void` | ? | ? | ?
-Return Type | ? | ? | ?
-`()` | ? | ? | ?
-Parameter | ? | ? | ?
-Argument | ? | ? | ?
-Parameter | ? | ? | ?
-Parameter-List | ? | ? | ?
-Named Arguments | ? | ? | ?
-Optional Arguments | ? | ? | ?
-Default Value | ? | ? | ?
-Code Paths | ? | ? | ?
-Method Overloading | ? | ? | ?
-Object-Oriented Programming | ? | ? | ?
-Data | ? | ? | ?
-Function | ? | ? | ?
-Structured Programming | ? | ? | ?
-Objects | ? | ? | ?
-Instance Method | ? | ? | ?
-Class | ? | ? | ?
-Type | ? | ? | ?
-`class` | ? | ? | ?
-`new` | ? | ? | ?
-Class Member | ? | ? | ?
-Class Instance | ? | ? | ?
-Garbage Collector | ? | ? | ?
-`null` | ? | ? | ?
-Invoke | ? | ? | ?
-Field | ? | ? | ?
-Static Class Member | ? | ? | ?
-Static Class | ? | ? | ?
-Global Access | ? | ? | ?
-Constructor | ? | ? | ?
-Initial Class Values | ? | ? | ?
-Parameterless | ? | ? | ?
-Default Contructor | ? | ? | ?
-Finalizer | ? | ? | ?
-Object Destruction | ? | ? | ?
-`GC.Collect` | ? | ? | ?
-Encapsulation | ? | ? | ?
-Access Modifier | ? | ? | ?
-`private` | ? | ? | ?
-`protected` | ? | ? | ?
-`public` | ? | ? | ?
-`internal` | ? | ? | ?
-Class Member Access | ? | ? | ?
 Inheritance | ? | ? | ?
-Property | ? | ? | ?
-Getter Method | ? | ? | ?
-Setter Method | ? | ? | ?
-Validation | ? | ? | ?
-Processing | ? | ? | ?
-`get` | ? | ? | ?
-`set` | ? | ? | ?
-Expression Body Syntax | ? | ? | ?
-Auto Property | ? | ? | ?
-Read-Only Property | ? | ? | ?
-Auto Property | ? | ? | ?
-base-Class | ? | ? | ?
+Base Class | ? | ? | ?
 Inherit From | ? | ? | ?
 Derived Class | ? | ? | ?
 Child Class | ? | ? | ?
 Parent Class | ? | ? | ?
-`sealed` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Polymorphism
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
 Polymorphism | ? | ? | ?
 `as` | ? | ? | ?
 `virtual` | ? | ? | ?
 `override` | ? | ? | ?
 `base` | ? | ? | ?
+-------------------------------
+
+
+
+
+
+## Console Commands
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+`Console.WriteLine` | Used to print variable types, usually a string onto the console on a new line. | ? | ?
+`Console.Write` | Used to print variable types, usually a string onto the console- note that this will not print on a new line. | ? | ?
+`Console.ReadLine` | Used to read input from the console. Which can in turn be stored into a field. | `string name = Console.ReadLine;` | ?
+`dotnet new console -o project-name` | Used within Command Prompt to create a new template C# Project Folder | ? | ?
+-------------------------------
+
+
+
+
+
+## To be sorted...
+Keyword |                  Summary                   | Sample Code | Mentioned In
+------- | ------------------------------------------ | ------------ | ------------
+Garbage Collector | ? | ? | ?
+Finalizer | ? | ? | ?
+Object Destruction | ? | ? | ?
+`GC.Collect` | ? | ? | ?
+Encapsulation | ? | ? | ?
+Expression Body Syntax | ? | ? | ?
+Auto Property | ? | ? | ?
+Read-Only Property | ? | ? | ?
+Auto Property | ? | ? | ?
+`sealed` | ? | ? | ?
 Abstraction | ? | ? | ?
 `abstract` | ? | ? | ?
 Implementation | ? | ? | ?
