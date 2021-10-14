@@ -49,7 +49,7 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 ## Access Modifier
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Access Modifier | All types and type members have an accessibility level. The accessibility level controls whether they can be used from other parts in your code- access modifiers such as the ones below declare that. | ? | [Access Modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+Access Modifier | All types and type members have an accessibility level. The accessibility level controls whether they can be used from other parts in your code- access modifiers such as the ones below declare that  accessibility. | ? | [Access Modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
 `public` | The type or member can be accessed by any other code in the same class or another class that references it. | ? | -||-
 `private` | The type or member can be accessed only by code in the same class. | ? | -||-
 `protected` | The type or member can be accessed only by code in the same class, or in a class that is derived from that class. | ? | -||-
@@ -65,8 +65,8 @@ Access Modifier | All types and type members have an accessibility level. The ac
 ## Parameters & Arguments
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Parameter | ? | ? | ?
-Argument | ? | ? | ?
+Parameter | A parameter is the variable which is part of the method’s signature (method declaration). | `void Parameters(int i, float f) { }` here the `i` and `f` are parameters. | ?
+Argument | An argument is an expression used when calling methods. | `void Arguments() { int number = 1; Parameters(one, 2.0) }` here we call the previous example method- the `number` and `2.0` are arguments. | ?
 Parameter-List | ? | ? | ?
 Named Arguments | ? | ? | ?
 Optional Arguments | ? | ? | ?
