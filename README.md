@@ -4,10 +4,10 @@
 ## Program Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Object-Oriented Programming | ? | ? | ?
+Object-Oriented Programming | Object-Oriented Programming, aka OOP, is about creating objects that contain both data and methods. | ? | ?
 Data | ? | ? | ?
 Function | ? | ? | ?
-Structured Programming | ? | ? | ?
+Objects | ? | ? | ?
 Objects | ? | ? | ?
 Type | ? | ? | ?
 Flow Control Statements | ? | ? | ?
@@ -109,10 +109,10 @@ Getter Method | ? | ? | ?
 Setter Method | ? | ? | ?
 Validation | ? | ? | ?
 Processing | ? | ? | ?
-Return Type | ? | ? | ?
+Return Type | The return type of a function the type of the value returned by the function. | `private void MethodName() { Method-Body }` | ?
 `get` | ? | ? | ?
 `set` | ? | ? | ?
-`void` | ? | ? | ?
+`void` | A return type. Specifies that a method (or a local function) doesn't return a value. | ? | ?
 -------------------------------
 
 
@@ -155,7 +155,6 @@ immutable | Means that the set field cannot be changed. | ? | ?
 
 
 ## Operators
-### Symbols used to read or write data.
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
 Operators | Symbols used to read or write data. | ? | ?
@@ -375,3 +374,4 @@ Abstraction | ? | ? | ?
 Implementation | ? | ? | ?
 Composition | ? | ? | ?
 "Composition over Inheritance" | ? | ? | ?
+Structured Programming | ? | ? | ?
