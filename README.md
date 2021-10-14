@@ -7,8 +7,7 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 Object-Oriented Programming | Object-Oriented Programming, aka OOP, is about creating objects that contain both data and methods. | ? | ?
 Data | ? | ? | ?
 Function | ? | ? | ?
-Objects | ? | ? | ?
-Objects | ? | ? | ?
+Objects | An object is an instance of a class. | ? | ?
 Type | ? | ? | ?
 Flow Control Statements | ? | ? | ?
 Default Value | ? | ? | ?
@@ -50,11 +49,13 @@ Keyword |                  Summary                   | Sample Code | Mentioned I
 ## Access Modifier
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Access Modifier | ? | ? | ?
-`private` | ? | ? | ?
-`protected` | ? | ? | ?
-`public` | ? | ? | ?
-`internal` | ? | ? | ?
+Access Modifier | All types and type members have an accessibility level. The accessibility level controls whether they can be used from other parts in your code- access modifiers such as the ones below declare that. | ? | [Access Modifiers](https://docs.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/access-modifiers)
+`public` | The type or member can be accessed by any other code in the same class or another class that references it. | ? | -||-
+`private` | The type or member can be accessed only by code in the same class. | ? | -||-
+`protected` | The type or member can be accessed only by code in the same class, or in a class that is derived from that class. | ? | -||-
+`internal` | ? | ? | -||-
+`protected internal` | ? | ? | -||-
+`private protected` | ? | ? | -||-
 -------------------------------
 
 
@@ -78,7 +79,7 @@ Optional Arguments | ? | ? | ?
 ## Classes
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Class | ? | ? | ?
+Class | A class is a template for objects. | ? | ?
 Class Member | ? | ? | ?
 Class Instance | ? | ? | ?
 Invoke | ? | ? | ?
