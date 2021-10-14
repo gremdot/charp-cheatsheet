@@ -4,8 +4,6 @@
 ## Program Lingo
 Keyword |                  Summary                   | Sample Code | Mentioned In
 ------- | ------------------------------------------ | ------------ | ------------
-Default Value | ? | ? | ?
-Code Paths | ? | ? | ?
 Object-Oriented Programming | ? | ? | ?
 Data | ? | ? | ?
 Function | ? | ? | ?
@@ -13,7 +11,15 @@ Structured Programming | ? | ? | ?
 Objects | ? | ? | ?
 Type | ? | ? | ?
 Flow Control Statements | ? | ? | ?
+Default Value | ? | ? | ?
+Code Paths | ? | ? | ?
 Scope | Scope is the area of the program where an item (be it variable, constant, function, etc.) that has an identifier name is recognized. | ? | ?
+Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2` the "1" and "2" are the operands and the plus symbol is the operator. | ?
+Type Conversion | Changing one data type to another. | `int age = Convert.ToInt32(Console.ReadLine());` here a string is being converted into an integer | ?
+Primitive Data Type | Primitive data types are pre-defined. Data types like byte, int, short, float, long, char, bool, etc are called Primitive data types. | ? | ?
+Non-Primitive Data Type | Non-primitive data types are user-defined. Non-primitive data types include class, enum, array, delegate, etc. | ? | ?
+Implicit Casting | ? | ? | ?
+Explicit Casting | ? | ? | ?
 Formatting | The way in which the code is visually presented empasis must be kept on code readability. | ? | ?
 Script Execution Order | The order in which script is run and compiled. Generally left to right. | ? | ?
 `()` | ? | ? | ?
@@ -122,12 +128,6 @@ Variable Assignment | Assigning a field a value | `int i = 0;` | ?
 Uninitialized Variable | A field without a value | `int i;` | ?
 Global Variable | Fields that have been declared outside of any functions and accessed by all other functions | `class Program { var imAccessibleToAll static void Main() { more code} }` | ?
 Variable Scope | The location of which a field is being declared and can be accessed/used. | ? | ?
-Operand | In computer programming, an operand is a term used to describe any object that is capable of being manipulated. | `1 + 2` the "1" and "2" are the operands and the plus symbol is the operator. | ?
-Type Conversion | Changing one data type to another. | `int age = Convert.ToInt32(Console.ReadLine());` here a string is being converted into an integer | ?
-Primitive Data Type | Primitive data types are pre-defined. Data types like byte, int, short, float, long, char, bool, etc are called Primitive data types. | ? | ?
-Non-Primitive Data Type | Non-primitive data types are user-defined. Non-primitive data types include class, enum, array, delegate, etc. | ? | ?
-Implicit Casting | ? | ? | ?
-Explicit Casting | ? | ? | ?
 -------------------------------
 
 
